@@ -13,5 +13,23 @@ namespace Quanlycanbo
         {
 
         }
+
+        protected void DetailsView2_ItemUpdated(object sender, DetailsViewUpdatedEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1);
+        }
+
+        protected void DetailsView2_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1);
+        }
+
+        protected void DetailsView2_ItemDeleted(object sender, DetailsViewDeletedEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1);
+        }
     }
 }
