@@ -14,9 +14,11 @@
     </asp:GridView>
         </div>
 
-        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" DataSourceID="SqlDataSource1" DefaultMode="Insert" CssClass="table table table-bordered text-black">
+        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" DataSourceID="SqlDataSource2" CssClass="table table table-bordered text-black" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="phongbanID">
             <Fields>
-                <asp:CommandField ShowInsertButton="True" ShowDeleteButton="True" ShowEditButton="True" />
+                <asp:BoundField DataField="phongbanID" HeaderText="phongbanID" ReadOnly="True" SortExpression="phongbanID" />
+                <asp:BoundField DataField="tenphongban" HeaderText="tenphongban" SortExpression="tenphongban" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
             </Fields>
 
         </asp:DetailsView>
@@ -33,6 +35,22 @@
             <asp:Parameter Name="phongbanID" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:quanlicanboConnectionString1 %>" DeleteCommand="DELETE FROM [phongban] WHERE [phongbanID] = @phongbanID" InsertCommand="INSERT INTO [phongban] ([phongbanID], [tenphongban]) VALUES (@phongbanID, @tenphongban)" SelectCommand="SELECT * FROM [phongban] WHERE ([phongbanID] = @phongbanID)" UpdateCommand="UPDATE [phongban] SET [tenphongban] = @tenphongban WHERE [phongbanID] = @phongbanID">
+            <DeleteParameters>
+                <asp:Parameter Name="phongbanID" Type="String" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="phongbanID" Type="String" />
+                <asp:Parameter Name="tenphongban" Type="String" />
+            </InsertParameters>
+            <SelectParameters>
+                <asp:ControlParameter ControlID="GridView1" Name="phongbanID" PropertyName="SelectedValue" Type="String" />
+            </SelectParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="tenphongban" Type="String" />
+                <asp:Parameter Name="phongbanID" Type="String" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
         <a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$DetailsView1$ctl03','')"><input type="button" value="Insert"></a>
 </div>
 </asp:Content>
