@@ -81,6 +81,7 @@
     <Content Include="Scripts\jquery-3.5.1.slim.js" />
     <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
     <Content Include="Scripts\magic.js" />
+    <Content Include="Scripts\wow.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

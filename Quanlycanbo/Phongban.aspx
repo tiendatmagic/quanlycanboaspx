@@ -7,9 +7,9 @@
     <div class="table-responsive">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="phongbanID" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" CssClass="table table table-bordered text-black" AllowPaging="True">
         <Columns>
-            <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="phongbanID" HeaderText="Phòng ban ID" ReadOnly="True" SortExpression="phongbanID" />
             <asp:BoundField DataField="tenphongban" HeaderText="Tên phòng ban" SortExpression="tenphongban" />
+            <asp:CommandField ShowSelectButton="True" SelectText="Chọn" />
         </Columns>
     </asp:GridView>
         </div>
