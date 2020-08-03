@@ -9,17 +9,17 @@
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="canboID,phongbanID,chucvuID" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" CssClass="table table table-bordered">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
-            <asp:BoundField DataField="canboID" HeaderText="canboID" ReadOnly="True" SortExpression="canboID" />
-            <asp:BoundField DataField="phongbanID" HeaderText="phongbanID" ReadOnly="True" SortExpression="phongbanID" />
-            <asp:BoundField DataField="chucvuID" HeaderText="chucvuID" ReadOnly="True" SortExpression="chucvuID" />
-            <asp:BoundField DataField="hoten" HeaderText="hoten" SortExpression="hoten" />
-            <asp:BoundField DataField="ngaysinh" HeaderText="ngaysinh" SortExpression="ngaysinh" />
-            <asp:BoundField DataField="gioitinh" HeaderText="gioitinh" SortExpression="gioitinh" />
-            <asp:BoundField DataField="hesoluong" HeaderText="hesoluong" SortExpression="hesoluong" />
-            <asp:BoundField DataField="ladangvien" HeaderText="ladangvien" SortExpression="ladangvien" />
-            <asp:BoundField DataField="vaocongdoan" HeaderText="vaocongdoan" SortExpression="vaocongdoan" />
-            <asp:BoundField DataField="anh" HeaderText="anh" SortExpression="anh" />
-            <asp:BoundField DataField="ghichu" HeaderText="ghichu" SortExpression="ghichu" />
+            <asp:BoundField DataField="canboID" HeaderText="Cán bộ ID" ReadOnly="True" SortExpression="canboID" />
+            <asp:BoundField DataField="phongbanID" HeaderText="Phòng ban ID" ReadOnly="True" SortExpression="phongbanID" />
+            <asp:BoundField DataField="chucvuID" HeaderText="Chức vụ ID" ReadOnly="True" SortExpression="chucvuID" />
+            <asp:BoundField DataField="hoten" HeaderText="Họ tên" SortExpression="hoten" />
+            <asp:BoundField DataField="ngaysinh" HeaderText="Ngày sinh" SortExpression="ngaysinh" />
+            <asp:BoundField DataField="gioitinh" HeaderText="Giới tính" SortExpression="gioitinh" />
+            <asp:BoundField DataField="hesoluong" HeaderText="Hệ số lương" SortExpression="hesoluong" />
+            <asp:BoundField DataField="ladangvien" HeaderText="Là đảng viên" SortExpression="ladangvien" />
+            <asp:BoundField DataField="vaocongdoan" HeaderText="Vào công đoàn" SortExpression="vaocongdoan" />
+            <asp:BoundField DataField="anh" HeaderText="Ảnh" SortExpression="anh" />
+            <asp:BoundField DataField="ghichu" HeaderText="Ghi chú" SortExpression="ghichu" />
         </Columns>
     </asp:GridView>
         </div>
