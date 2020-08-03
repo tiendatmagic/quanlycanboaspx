@@ -23,6 +23,13 @@
         </Columns>
     </asp:GridView>
         </div>
+
+        <asp:DetailsView ID="DetailsView2" runat="server" Height="50px" Width="125px" DataSourceID="SqlDataSource1" DefaultMode="Insert" CssClass="table table table-bordered text-black">
+            <Fields>
+                <asp:CommandField ShowDeleteButton="True" ShowInsertButton="True" />
+            </Fields>
+        </asp:DetailsView>
+
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:quanlicanboConnectionString1 %>" DeleteCommand="DELETE FROM [canbo] WHERE [canboID] = @canboID AND [phongbanID] = @phongbanID AND [chucvuID] = @chucvuID" InsertCommand="INSERT INTO [canbo] ([canboID], [phongbanID], [chucvuID], [hoten], [ngaysinh], [gioitinh], [hesoluong], [ladangvien], [vaocongdoan], [anh], [ghichu]) VALUES (@canboID, @phongbanID, @chucvuID, @hoten, @ngaysinh, @gioitinh, @hesoluong, @ladangvien, @vaocongdoan, @anh, @ghichu)" ProviderName="<%$ ConnectionStrings:quanlicanboConnectionString1.ProviderName %>" SelectCommand="SELECT [canboID], [phongbanID], [chucvuID], [hoten], [ngaysinh], [gioitinh], [hesoluong], [ladangvien], [vaocongdoan], [anh], [ghichu] FROM [canbo]" UpdateCommand="UPDATE [canbo] SET [hoten] = @hoten, [ngaysinh] = @ngaysinh, [gioitinh] = @gioitinh, [hesoluong] = @hesoluong, [ladangvien] = @ladangvien, [vaocongdoan] = @vaocongdoan, [anh] = @anh, [ghichu] = @ghichu WHERE [canboID] = @canboID AND [phongbanID] = @phongbanID AND [chucvuID] = @chucvuID">
         <DeleteParameters>
             <asp:Parameter Name="canboID" Type="String" />
