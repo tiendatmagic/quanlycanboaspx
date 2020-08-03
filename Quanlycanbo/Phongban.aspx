@@ -16,11 +16,11 @@
 
         <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" DataSourceID="SqlDataSource1" DefaultMode="Insert" CssClass="table table table-bordered text-black">
             <Fields>
-                <asp:CommandField ShowInsertButton="True" />
+                <asp:CommandField ShowInsertButton="True" ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
 
         </asp:DetailsView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:quanlicanboConnectionString1 %>" DeleteCommand="DELETE FROM [phongban] WHERE [phongbanID] = @phongbanID" InsertCommand="INSERT INTO [phongban] ([phongbanID], [tenphongban]) VALUES (@phongbanID, @tenphongban)" ProviderName="<%$ ConnectionStrings:quanlicanboConnectionString1.ProviderName %>" SelectCommand="SELECT [phongbanID], [tenphongban] FROM [phongban]" UpdateCommand="UPDATE [phongban] SET [tenphongban] = @tenphongban WHERE [phongbanID] = @phongbanID">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:quanlicanboConnectionString1 %>" DeleteCommand="DELETE FROM [phongban] WHERE [phongbanID] = @phongbanID" InsertCommand="INSERT INTO [phongban] ([phongbanID], [tenphongban]) VALUES (@phongbanID, @tenphongban)" SelectCommand="SELECT [phongbanID], [tenphongban] FROM [phongban]" UpdateCommand="UPDATE [phongban] SET [tenphongban] = @tenphongban WHERE [phongbanID] = @phongbanID">
         <DeleteParameters>
             <asp:Parameter Name="phongbanID" Type="String" />
         </DeleteParameters>
@@ -33,5 +33,6 @@
             <asp:Parameter Name="phongbanID" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
+        <a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$DetailsView1$ctl03','')"><input type="button" value="Insert"></a>
 </div>
 </asp:Content>
