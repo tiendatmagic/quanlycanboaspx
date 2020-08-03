@@ -58,3 +58,7 @@ input[type='text'] {
 #form1 > nav:nth-child(5) > div > div:nth-child(2) > p {
     line-height: 30px;
 }
+
+#ContentPlaceHolder1_DetailsView1 {
+    width: 30% !important;
+}
