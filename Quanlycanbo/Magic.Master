@@ -41,18 +41,20 @@
 
             </asp:ContentPlaceHolder>
         </div>
-        <div class="footer">
+        
+        <nav class="navbar navbar-expand-md bg-primary bg-pink">
             <div class="row">
                 <div class="col">
                     <img src="img/tiendatmagic.png" width="150px">
                 </div>
                 <div class="col">
-                    <p>© 2020 Copyright by Tiendatmagic - All Rights Reserved | Designed by Tiendatmagic</p>
+                    <p class="text-white">© 2020 Copyright by Tiendatmagic - All Rights Reserved | Designed by Tiendatmagic</p>
                 </div>
           
             </div>
             
-        </div>
+        </nav>
+        
     </form>
 </body>
 </html>
