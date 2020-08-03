@@ -19,7 +19,7 @@
             <asp:BoundField DataField="vaocongdoan" HeaderText="Vào công đoàn" SortExpression="vaocongdoan" />
             <asp:BoundField DataField="anh" HeaderText="Ảnh" SortExpression="anh" />
             <asp:BoundField DataField="ghichu" HeaderText="Ghi chú" SortExpression="ghichu" />
-            <asp:CommandField ShowSelectButton="True" SelectText="Chọn" />
+            <asp:CommandField ShowSelectButton="True" HeaderText="Danh mục chọn" SelectText="Chọn" />
         </Columns>
     </asp:GridView>
         </div>

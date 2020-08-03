@@ -9,7 +9,7 @@
         <Columns>
             <asp:BoundField DataField="phongbanID" HeaderText="Phòng ban ID" ReadOnly="True" SortExpression="phongbanID" />
             <asp:BoundField DataField="tenphongban" HeaderText="Tên phòng ban" SortExpression="tenphongban" />
-            <asp:CommandField ShowSelectButton="True" SelectText="Chọn" />
+            <asp:CommandField ShowSelectButton="True" HeaderText="Danh mục chọn" SelectText="Chọn" />
         </Columns>
     </asp:GridView>
         </div>
