@@ -14,7 +14,7 @@
     </asp:GridView>
         </div>
 
-        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" DataSourceID="SqlDataSource1" DefaultMode="Insert">
+        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" DataSourceID="SqlDataSource1" DefaultMode="Insert" CssClass="table table table-bordered text-black">
             <Fields>
                 <asp:CommandField ShowInsertButton="True" />
             </Fields>
