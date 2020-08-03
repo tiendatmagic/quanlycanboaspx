@@ -37,7 +37,7 @@
                 <asp:BoundField DataField="vaocongdoan" HeaderText="vaocongdoan" SortExpression="vaocongdoan" />
                 <asp:BoundField DataField="anh" HeaderText="anh" SortExpression="anh" />
                 <asp:BoundField DataField="ghichu" HeaderText="ghichu" SortExpression="ghichu" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" CancelText="Hủy" DeleteText="Xoá" EditText="Sửa" InsertText="Thêm" NewText="Mới" UpdateText="Cập nhật" />
             </Fields>
         </asp:DetailsView>
 
