@@ -38,6 +38,14 @@ a {
     border-color: rgb(255,6,220) !important;
 }
 
+#ContentPlaceHolder1_DetailsView1 td {
+    border-color: rgb(255,6,220) !important;
+}
+
+#ContentPlaceHolder1_DetailsView2 td {
+    border-color: rgb(255,6,220) !important;
+}
+
 table a {
     color: black;
 }
@@ -64,3 +72,6 @@ input[type='text'] {
     width: 30% !important;
 }
 
+td[colspan="2"] {
+    background-color: hotpink;
+}
