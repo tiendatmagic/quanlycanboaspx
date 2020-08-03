@@ -18,7 +18,7 @@
             <Fields>
                 <asp:BoundField DataField="phongbanID" HeaderText="phongbanID" ReadOnly="True" SortExpression="phongbanID" />
                 <asp:BoundField DataField="tenphongban" HeaderText="tenphongban" SortExpression="tenphongban" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" CancelText="Hủy" DeleteText="Xóa" EditText="Sửa" InsertText="Thêm" NewText="Mới" UpdateText="Cập nhật" />
             </Fields>
 
         </asp:DetailsView>
