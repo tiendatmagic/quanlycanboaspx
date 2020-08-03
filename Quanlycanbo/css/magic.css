@@ -3,11 +3,57 @@
     padding: 0px;
 }
 
-body,html {
+body, html {
     width: 100%;
     height: 100%;
 }
+a {
+    text-decoration: none !important;
+}
 
+#collapsibleNavbar > ul > li > a:hover {
+    color: yellow !important;
+}
 .bg-pink {
     background-color: deeppink !important;
 }
+
+#ContentPlaceHolder1_GridView1 > tbody > tr:nth-child(1) {
+    background-color: hotpink !important;
+}
+
+    #ContentPlaceHolder1_GridView1 > tbody > tr:nth-child(1) a:hover {
+        color: red !important;
+    }
+
+table * {
+    border-color: rgb(255,6,220) !important;
+}
+
+table a {
+    color: black;
+}
+
+td a {
+    color: red;
+}
+
+td a:hover {
+        color: green;
+ font-style: italic;
+}
+
+.footer {
+        
+    background-color: deeppink;
+    color: white;
+}
+
+div.footer p {
+    margin-top: 30px;
+}
+
+div.footer img {
+    margin-top: 10px;
+}
+

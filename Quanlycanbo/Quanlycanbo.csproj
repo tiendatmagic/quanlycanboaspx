@@ -70,6 +70,8 @@
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Canbo.aspx" />
     <Content Include="css\magic.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="img\tiendatmagic.png" />
     <Content Include="Phongban.aspx" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
@@ -85,6 +87,13 @@
     </Compile>
     <Compile Include="Canbo.aspx.designer.cs">
       <DependentUpon>Canbo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Magic.Master.cs">
       <DependentUpon>Magic.Master</DependentUpon>

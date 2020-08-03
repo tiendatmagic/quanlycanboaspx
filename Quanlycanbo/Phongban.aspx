@@ -3,13 +3,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid">
-    <p> Bảng danh sách Phòng ban </p>
+    <p> Bảng quản trị danh sách Phòng ban </p>
     <div class="table-responsive">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="phongbanID" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" CssClass="table table table-bordered">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="phongbanID" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" CssClass="table table table-bordered text-black">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
-            <asp:BoundField DataField="phongbanID" HeaderText="phongbanID" ReadOnly="True" SortExpression="phongbanID" />
-            <asp:BoundField DataField="tenphongban" HeaderText="tenphongban" SortExpression="tenphongban" />
+            <asp:BoundField DataField="phongbanID" HeaderText="Phòng ban" ReadOnly="True" SortExpression="phongbanID" />
+            <asp:BoundField DataField="tenphongban" HeaderText="Tên phòng ban" SortExpression="tenphongban" />
         </Columns>
     </asp:GridView>
         </div>
