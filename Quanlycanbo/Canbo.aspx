@@ -26,7 +26,7 @@
 
         <asp:DetailsView ID="DetailsView2" runat="server" Height="50px" Width="125px" DataSourceID="SqlDataSource1" DefaultMode="Insert" CssClass="table table table-bordered text-black">
             <Fields>
-                <asp:CommandField ShowDeleteButton="True" ShowInsertButton="True" />
+                <asp:CommandField ShowDeleteButton="True" ShowInsertButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
 

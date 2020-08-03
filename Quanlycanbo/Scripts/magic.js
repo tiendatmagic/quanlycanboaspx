@@ -18,4 +18,4 @@
     $("#ContentPlaceHolder1_DetailsView2 > tbody > tr:nth-child(11) > td:nth-child(1)").text("Ghi chú");
 
 });
-alert("© 2020 Copyright by Tiendatmagic");
+//alert("© 2020 Copyright by Tiendatmagic");
