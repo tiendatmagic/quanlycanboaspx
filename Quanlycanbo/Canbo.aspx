@@ -8,7 +8,6 @@
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="canboID,phongbanID,chucvuID" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" CssClass="table table table-bordered" AllowPaging="True">
         <Columns>
-            <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="canboID" HeaderText="Cán bộ ID" ReadOnly="True" SortExpression="canboID" />
             <asp:BoundField DataField="phongbanID" HeaderText="Phòng ban ID" ReadOnly="True" SortExpression="phongbanID" />
             <asp:BoundField DataField="chucvuID" HeaderText="Chức vụ ID" ReadOnly="True" SortExpression="chucvuID" />
@@ -20,6 +19,7 @@
             <asp:BoundField DataField="vaocongdoan" HeaderText="Vào công đoàn" SortExpression="vaocongdoan" />
             <asp:BoundField DataField="anh" HeaderText="Ảnh" SortExpression="anh" />
             <asp:BoundField DataField="ghichu" HeaderText="Ghi chú" SortExpression="ghichu" />
+            <asp:CommandField ShowSelectButton="True" SelectText="Chọn" />
         </Columns>
     </asp:GridView>
         </div>
