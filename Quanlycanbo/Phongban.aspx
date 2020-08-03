@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="container-fluid">
     <p> Bảng danh sách Phòng ban </p>
     <div class="table-responsive">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="phongbanID" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" CssClass="table table table-bordered">
@@ -25,5 +26,5 @@
             <asp:Parameter Name="phongbanID" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
-
+</div>
 </asp:Content>
